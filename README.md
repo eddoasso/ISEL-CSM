@@ -1,4 +1,6 @@
 # ISEL-CSM
-trabalhos praticos CSM
+Trabalhos praticos CSM
 
-Duarte is big gay
+@author Pedro Henriques
+@author Duarte Gregório
+@author Artur Paredes
