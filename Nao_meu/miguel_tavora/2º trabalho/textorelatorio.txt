@@ -1,0 +1,36 @@
+<-----Huffman----->
+
+Para gerar a função gera_huffman primeiramente foi criada uma função chamada geraDicionario
+tem como parâmetro o texto introduzido. Apartir do texto introduzido ele gera um dicionario com o numero de vezes
+que o caracter se repete e o caracter correspondente. 
+Após ser gerado o dicionário era indespensável criar uma função que ordenada de forma crescente os caracteres,
+por número de vezes que o mesmo se repete. Para isso foi criada a função ordem Crescente.
+Na função gera_huffman propriamente dita gera um código binário correspondente a cada caracter.
+Para isso foi implementada uma função recursiva, onde utilizando uma tabela como argumento,
+onde vai acrescentando a cada caracter um novo numero obtendo desta forma uma tabela.
+
+<-----Codifica---->
+
+Para codificar ele recebe uma mensagem (sequencia de caracteres) apartir do huffman criado anteriormente
+é possível obter uma sequência de um codigo binario para os caracteres obtido no codigo de huffman.
+Atribuindo ao nivel mais alto a um caracter o numero 0 e a outro o numero 1, no nivel que se segue
+atribui-se mais um 0 e e um ao caracter que foi dividido e assim sucessimente para todos os caracteres
+isolados e obtidos através no codigo de huffman.
+
+
+<-----Descodificia---->
+
+Apartir da tabela que identifica cada codigo binario e da sequencia do codigo binario obtido é pretendido
+obter a mensagem codificada. Para isso a função lê número a número e sempre que reconhece o caracter ele devolve o caracter
+fazendo isso sistematicamente até encontrar não existir mais códigos binários.
+
+
+<----Escrever----->
+
+Tal como o nome diz ele escreve a mensagem apartir do código binário cedido como argumento. O que a função executa
+é que apartir da tabela da função codifica ela escreve a sequencia de bits para um ficheiro txt.
+
+
+<----Ler-------->
+
+Apartir do ficheiro texto criado na função escrever a função ler vai ler esse codigo binário que está dentro do ficheiro txt.
